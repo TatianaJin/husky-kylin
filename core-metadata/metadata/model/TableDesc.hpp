@@ -14,7 +14,7 @@ using json = nlohmann::json;
 class TableDesc
 {
 public:
-	TableDesc();
+	TableDesc(const std::string & tableJsonPath);
 	~TableDesc();
 	// TabeleDesc * appendColumns(std::vector<ColumnDesc* > computedColumns, bool makeCopy);
 	std::vector<ColumnDesc *> getColumns();
